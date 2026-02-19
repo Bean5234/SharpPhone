@@ -32,7 +32,7 @@
             lblModel = new Label();
             lblSize = new Label();
             lblPrize = new Label();
-            lblStock = new Label();
+            lbl2Stock2 = new Label();
             textBox1 = new TextBox();
             textBox2 = new TextBox();
             textBox3 = new TextBox();
@@ -81,14 +81,14 @@
             lblPrize.TabIndex = 3;
             lblPrize.Text = "Prijs";
             // 
-            // lblStock
+            // lbl2Stock2
             // 
-            lblStock.AutoSize = true;
-            lblStock.Location = new Point(12, 213);
-            lblStock.Name = "lblStock";
-            lblStock.Size = new Size(70, 20);
-            lblStock.TabIndex = 4;
-            lblStock.Text = "Voorraad";
+            lbl2Stock2.AutoSize = true;
+            lbl2Stock2.Location = new Point(12, 213);
+            lbl2Stock2.Name = "lbl2Stock2";
+            lbl2Stock2.Size = new Size(70, 20);
+            lbl2Stock2.TabIndex = 4;
+            lbl2Stock2.Text = "Voorraad";
             // 
             // textBox1
             // 
@@ -155,7 +155,7 @@
             Controls.Add(textBox3);
             Controls.Add(textBox2);
             Controls.Add(textBox1);
-            Controls.Add(lblStock);
+            Controls.Add(lbl2Stock2);
             Controls.Add(lblPrize);
             Controls.Add(lblSize);
             Controls.Add(lblModel);
@@ -172,7 +172,7 @@
         private Label lblModel;
         private Label lblSize;
         private Label lblPrize;
-        private Label lblStock;
+        private Label lbl2Stock;
         private TextBox textBox1;
         private TextBox textBox2;
         private TextBox textBox3;

@@ -1,12 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Text;
-using System.Windows.Forms;
-
-namespace SharpPhone
+﻿namespace SharpPhone
 {
     public partial class fmMain : Form
     {
@@ -15,7 +7,7 @@ namespace SharpPhone
             InitializeComponent();
         }
 
-        private void label1_Click(object sender, EventArgs e)
+        private void label0_Click(object sender, EventArgs e)
         {
 
         }

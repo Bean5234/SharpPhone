@@ -77,13 +77,13 @@
             // 
             // lblStock
             // 
-            lblStock.AutoSize = true;
-            lblStock.Location = new Point(12, 9);
-            lblStock.Name = "lblStock";
-            lblStock.Size = new Size(65, 20);
-            lblStock.TabIndex = 4;
-            lblStock.Text = "Vooraad";
-            lblStock.Click += label1_Click;
+            lbl2Stock2.AutoSize = true;
+            lbl2Stock2.Location = new Point(12, 9);
+            lbl2Stock2.Name = "lblStock";
+            lbl2Stock2.Size = new Size(65, 20);
+            lbl2Stock2.TabIndex = 4;
+            lbl2Stock2.Text = "Vooraad";
+            lbl2Stock2.Click += label1_Click;
             // 
             // menuStrip1
             // 
@@ -99,7 +99,7 @@
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(497, 450);
-            Controls.Add(lblStock);
+            Controls.Add(lbl2Stock2);
             Controls.Add(lstItems);
             Controls.Add(btnDelete);
             Controls.Add(btnEdit);
@@ -116,10 +116,11 @@
         #endregion
 
         private Button btnAdd;
+        
         private Button btnEdit;
         private Button btnDelete;
         private ListBox lstItems;
-        private Label lblStock;
+        private Label lbl2Stock2;
         private MenuStrip menuStrip1;
     }
 }
