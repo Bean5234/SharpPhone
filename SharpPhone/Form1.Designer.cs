@@ -31,8 +31,9 @@
             btnAdd = new Button();
             btnEdit = new Button();
             btnDelete = new Button();
-            lsbStock = new ListBox();
-            txtStock = new Label();
+            lstItems = new ListBox();
+            lblStock = new Label();
+            menuStrip1 = new MenuStrip();
             SuspendLayout();
             // 
             // btnAdd
@@ -65,35 +66,46 @@
             btnDelete.UseVisualStyleBackColor = true;
             btnDelete.Click += button3_Click;
             // 
-            // lsbStock
+            // lstItems
             // 
-            lsbStock.FormattingEnabled = true;
-            lsbStock.Location = new Point(12, 34);
-            lsbStock.Name = "lsbStock";
-            lsbStock.Size = new Size(321, 404);
-            lsbStock.TabIndex = 3;
-            lsbStock.SelectedIndexChanged += listBox1_SelectedIndexChanged;
+            lstItems.FormattingEnabled = true;
+            lstItems.Location = new Point(12, 34);
+            lstItems.Name = "lstItems";
+            lstItems.Size = new Size(321, 404);
+            lstItems.TabIndex = 3;
+            lstItems.SelectedIndexChanged += listBox1_SelectedIndexChanged;
             // 
-            // txtStock
+            // lblStock
             // 
-            txtStock.AutoSize = true;
-            txtStock.Location = new Point(12, 9);
-            txtStock.Name = "txtStock";
-            txtStock.Size = new Size(65, 20);
-            txtStock.TabIndex = 4;
-            txtStock.Text = "Vooraad";
-            txtStock.Click += label1_Click;
+            lblStock.AutoSize = true;
+            lblStock.Location = new Point(12, 9);
+            lblStock.Name = "lblStock";
+            lblStock.Size = new Size(65, 20);
+            lblStock.TabIndex = 4;
+            lblStock.Text = "Vooraad";
+            lblStock.Click += label1_Click;
+            // 
+            // menuStrip1
+            // 
+            menuStrip1.ImageScalingSize = new Size(20, 20);
+            menuStrip1.Location = new Point(0, 0);
+            menuStrip1.Name = "menuStrip1";
+            menuStrip1.Size = new Size(497, 24);
+            menuStrip1.TabIndex = 6;
+            menuStrip1.Text = "menuStrip1";
             // 
             // fmMain
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(497, 450);
-            Controls.Add(txtStock);
-            Controls.Add(lsbStock);
+            Controls.Add(lblStock);
+            Controls.Add(lstItems);
             Controls.Add(btnDelete);
             Controls.Add(btnEdit);
             Controls.Add(btnAdd);
+            Controls.Add(menuStrip1);
+            MainMenuStrip = menuStrip1;
             Name = "fmMain";
             Text = "SharpPhone";
             Load += fmMain_Load;
@@ -106,7 +118,8 @@
         private Button btnAdd;
         private Button btnEdit;
         private Button btnDelete;
-        private ListBox lsbStock;
-        private Label txtStock;
+        private ListBox lstItems;
+        private Label lblStock;
+        private MenuStrip menuStrip1;
     }
 }
